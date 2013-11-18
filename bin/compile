@@ -28,7 +28,7 @@ sudo echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true
 sudo apt-get install -y oracle-java7-installer
 
 PROFILE_PATH="$BUILD_DIR/.profile.d/java.sh"
-mkdir -p $(dirname $PROFILE_PATH)
+sudo mkdir -p $(dirname $PROFILE_PATH)
 echo 'export JAVA_HOME="/usr/lib/jvm/java-7-oracle"' >> $PROFILE_PATH
 
 logger -p user.notice -t "slugc[$$]" "language_pack_java java_compile_end $LOGGER_FLAGS"
