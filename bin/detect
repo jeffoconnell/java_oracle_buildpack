@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/use <build-dir>
 
-if sudo test -d "/usr/lib/jvm/java-7-oracle"; then
+if sudo test -d "/usr/lib/jvm"; then
    echo "Java" && exit 0
 else
   echo "no" && exit 1
