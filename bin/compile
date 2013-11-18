@@ -16,7 +16,7 @@ sudo apt-get -y -qq clean
 sudo apt-get -y -qq update
 sudo apt-get -y -qq upgrade
 sudo apt-get install -y python-software-properties software-properties-common
-sudo apt-get install -y curl chkconfig build-essential git-core
+sudo apt-get install -y curl build-essential git-core
 #Custom repo for Java 1.7
 sudo apt-add-repository -y ppa:webupd8team/java
 sudo apt-get -y -qq update
