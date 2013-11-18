@@ -12,14 +12,14 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 LOGGER_FLAGS=""
 
-sudo apt-get -y clean
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt-get -y -qq clean
+sudo apt-get -y -qq update
+sudo apt-get -y -qq upgrade
 sudo apt-get install -y python-software-properties software-properties-common
 sudo apt-get install -y curl chkconfig build-essential git-core
 #Custom repo for Java 1.7
 sudo apt-add-repository -y ppa:webupd8team/java
-sudo apt-get -y update
+sudo apt-get -y -qq update
 #Auto accept installer prompts
 sudo echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
 sudo echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
